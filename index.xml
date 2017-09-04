@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kenwoo.me</title>
+    <title>About on kenwoo.me</title>
     <link>http://kenwoo.me/</link>
-    <description>Recent content on kenwoo.me</description>
+    <description>Recent content in About on kenwoo.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
 	<atom:link href="http://kenwoo.me/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>http://kenwoo.me/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://kenwoo.me/</guid>
-      <description> Hi, I&amp;rsquo;m Kenny Woo. Welcome to my humble abode.
-You can find me on Github.
-Who am I  thinker experimenter minimalist outgoing introvert  Things I Find Awesome  text / the command line hoisting heavy objects feats of athletic prowess digitally represented games  </description>
-    </item>
     
   </channel>
 </rss>
