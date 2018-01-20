@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kenwoo.me</title>
-    <link>http://kenwoo.me/</link>
-    <description>Recent content on kenwoo.me</description>
+    <title>Blog on kenwoo.me</title>
+    <link>http://kenwoo.me/blog/</link>
+    <description>Recent content in Blog on kenwoo.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 19 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kenwoo.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://kenwoo.me/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Current Thoughts</title>
-      <link>http://kenwoo.me/current_thoughts/</link>
-      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://kenwoo.me/current_thoughts/</guid>
-      <description>Quantity always trumps quality Just stumbled upon the idea of quantity always trumping quality. Excited to try it out!
-Accelerated C++ Currently reading the book Accelerated C++. It takes the approach of teaching you purely C++, rather than building on top of C knowledge. While it isn&amp;rsquo;t an exhaustive text, it claims to teach you the essentials. Afterwards, it directs you to more complete texts as well as learning from more focused sources.</description>
-    </item>
-    
-    <item>
-      <title>Home</title>
-      <link>http://kenwoo.me/home/</link>
-      <pubDate>Mon, 15 Jan 2018 18:37:56 -0800</pubDate>
-      
-      <guid>http://kenwoo.me/home/</guid>
-      <description> Hi, I&amp;rsquo;m Kenny Woo. Welcome to my humble abode.
-You can find me on Github.
-Who am I  thinker experimenter minimalist outgoing introvert  Things I Find Awesome  text / the command line hoisting heavy objects feats of athletic prowess digitally represented games  </description>
-    </item>
     
     <item>
       <title>10% Happier</title>
