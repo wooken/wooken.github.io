@@ -6,7 +6,7 @@
     <description>Recent content on kenwoo.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 19 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://kenwoo.me/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Current Thoughts</title>
       <link>http://kenwoo.me/current_thoughts/</link>
-      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>http://kenwoo.me/current_thoughts/</guid>
       <description>Quantity always trumps quality Just stumbled upon the idea of quantity always trumping quality. Excited to try it out!
@@ -24,12 +24,21 @@ Accelerated C++ Currently reading the book Accelerated C++. It takes the approac
     <item>
       <title>Home</title>
       <link>http://kenwoo.me/home/</link>
-      <pubDate>Mon, 15 Jan 2018 18:37:56 -0800</pubDate>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>http://kenwoo.me/home/</guid>
       <description> Hi, I&amp;rsquo;m Kenny Woo. Welcome to my humble abode.
 You can find me on Github.
-Who am I  thinker experimenter minimalist outgoing introvert  Things I Find Awesome  text / the command line hoisting heavy objects feats of athletic prowess digitally represented games  </description>
+Things I Get Excited Over  text / the command line hoisting heavy objects feats of athletic prowess digitally represented games  </description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://kenwoo.me/projects/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://kenwoo.me/projects/</guid>
+      <description>MPT Log Generator Used to perform formatting and calculations for daily exercise log entries for my coach at MPT. Originally a command line tool written in Go. Rewritten so that other athletes on the team could use it as well.</description>
     </item>
     
     <item>
