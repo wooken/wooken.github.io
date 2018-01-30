@@ -22,6 +22,15 @@ Accelerated C++ Currently reading the book Accelerated C++. It takes the approac
     </item>
     
     <item>
+      <title>Code</title>
+      <link>http://kenwoo.me/code/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://kenwoo.me/code/</guid>
+      <description>MPT Log Generator Used to perform formatting and calculations for daily exercise log entries for my coach at MPT. Originally a command line tool written in Go. Rewritten so that other athletes on the team could use it as well.</description>
+    </item>
+    
+    <item>
       <title>Home</title>
       <link>http://kenwoo.me/home/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
@@ -30,15 +39,6 @@ Accelerated C++ Currently reading the book Accelerated C++. It takes the approac
       <description> Hi, I&amp;rsquo;m Kenny Woo. Welcome to my humble abode.
 You can find me on Github.
 Things I Get Excited Over  text / the command line hoisting heavy objects feats of athletic prowess digitally represented games  </description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>http://kenwoo.me/projects/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://kenwoo.me/projects/</guid>
-      <description>MPT Log Generator Used to perform formatting and calculations for daily exercise log entries for my coach at MPT. Originally a command line tool written in Go. Rewritten so that other athletes on the team could use it as well.</description>
     </item>
     
     <item>
