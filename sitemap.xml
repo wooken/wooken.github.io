@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://kenwoo.me/blog/10-happier/</loc>
+    <lastmod>2018-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://kenwoo.me/current_thoughts/</loc>
     <lastmod>2018-01-02T00:00:00+00:00</lastmod>
   </url>
@@ -24,7 +29,7 @@
   
   <url>
     <loc>http://kenwoo.me/blog/</loc>
-    <lastmod>2016-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -40,7 +45,7 @@
   
   <url>
     <loc>http://kenwoo.me/</loc>
-    <lastmod>2018-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
