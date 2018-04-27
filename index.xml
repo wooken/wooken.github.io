@@ -6,10 +6,21 @@
     <description>Recent content on kenwoo.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 19 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://kenwoo.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Busted Knee</title>
+      <link>http://kenwoo.me/blog/busted-knee/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://kenwoo.me/blog/busted-knee/</guid>
+      <description>In the beginning of December 2017, I dislocated my right knee when pushing off to move forward during a beach volleyball game.
+What a drag.
+After a few visits to a physiotherapist and a sport medicine doctor, and eventually getting an MRI, it turns out I have a torn ACL. I am told that I am a good candidate for ACL reconstructive surgery. Either that or I quit any sport that could cause dislocation of the knee, further damaging adjacent structures.</description>
+    </item>
     
     <item>
       <title>10% Happier</title>
@@ -20,16 +31,6 @@
       <description>I recently went on a life-changing journey that I want to share.
 It all started with the book The Inner Game of Tennis by Timothy Gallwey, which introduced me to a few ideas:
  learn to observe a result without emotional attachment attempting to consciously control every movement will result in stunted long-term skill development it is through attempting to micro-manage your movements during crunch time that causes your body to tense up resulting in the dreaded &amp;ldquo;choke&amp;rdquo;  It is not uncommon for people to overthink their movements in training or sport.</description>
-    </item>
-    
-    <item>
-      <title>Current Thoughts</title>
-      <link>http://kenwoo.me/current_thoughts/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://kenwoo.me/current_thoughts/</guid>
-      <description>Quantity always trumps quality Just stumbled upon the idea of quantity always trumping quality. Excited to try it out!
-Accelerated C++ (Dec. 2017) Currently reading the book Accelerated C++. It takes the approach of teaching you purely C++, rather than building on top of C knowledge. While it isn&amp;rsquo;t an exhaustive text, it claims to teach you the essentials. Afterwards, it directs you to more complete texts as well as learning from more focused sources.</description>
     </item>
     
     <item>
