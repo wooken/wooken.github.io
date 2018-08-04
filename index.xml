@@ -48,7 +48,9 @@ It all started with the book The Inner Game of Tennis by Timothy Gallwey, which 
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>http://kenwoo.me/code/</guid>
-      <description>MPT Log Generator Used to perform formatting and calculations for daily exercise log entries for my coach at MPT. Originally a command line tool written in Go. Rewritten so that other athletes on the team could use it as well.</description>
+      <description>Countdown until World Domination After receiving ACL surgery for my right knee, I was told to shoot for 1 whole year of gradual return to sport. This is merely to help me keep track of when it is time to profit.
+Source
+MPT Log Generator Used to perform formatting and calculations for daily exercise log entries for my coach at MPT. Originally a command line tool written in Go. Rewritten so that other athletes on the team could use it as well.</description>
     </item>
     
     <item>
