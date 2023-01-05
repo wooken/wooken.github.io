@@ -1,1187 +1,269 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en" dir="auto">
 
-<head>
-<meta charset="utf-8">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Bridging the mind and body.">
-
-
-    <meta property="twitter:site" content="@kenzorz">
-
-<meta property="og:site_name" content="kenwoo.me" />
-<meta property="og:locale" content="en-US" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://kenwoo.me/code/" />
-<meta property="og:title" content="Code" />
-<meta property="twitter:title" content="Code">
-
-    <meta property="twitter:card" content="summary">
-
-<meta property="og:description" content="">
-<meta property="twitter:description" content="">
-
-<title>
-
-
-     kenwoo.me - Code 
-
-</title>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Code | kenwoo.me</title>
+<meta name="keywords" content="">
+<meta name="description" content="Countdown until World Domination After receiving ACL surgery for my right knee, I was told to aim for one whole year of rehabilitation and gradual return to world domination sport.
+Crossing out days on a calendar is so last decade, so I made this page to help me keep track of when it is time to profit again.
+Source Code on Github
+MPT Log Generator When I was training a lot, my coach wanted me to keep a daily journal of what I did each session on Google Docs.">
+<meta name="author" content="">
 <link rel="canonical" href="https://kenwoo.me/code/">
-
-
-<style media="screen">
-  @font-face {
-  font-family: 'Nexa Bold';
-  src: url('https://kenwoo.me/fonts/Nexa Bold.otf');
-}
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, div.column {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-a,
-a:visited,
-a:focus,
-a:active {
-  text-decoration: none;
-}
-html {
-  height: 100%;
-  font-size: 16px;
-}
-body {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  min-height: 100%;
-  font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  color: #111111;
-  line-height: 1.6;
-  text-rendering: optimizeLegibility !important;
-}
-.icon {
-  text-rendering: geometricPrecision !important;
-}
-section {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  width: 100%;
-}
-div.column {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  width: 100%;
-}
-.container {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  width: 100%;
-}
-div.header .container {
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-}
-div.header .content {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-div.header .container .logo {
-  
-  max-width: 100px;
-  
-  margin-left: -2em;
-}
-div.header .name {
-  padding-top: 20px;
-  font-size: 28px;
-  font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
-  letter-spacing: -0.005rem;
-  
-  text-transform: uppercase;
-  
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  color: #333333;
-}
-div.header nav {
-  margin-bottom: 16px;
-}
-div.header nav ul {
-  list-style: none;
-  text-align: center;
-  display: -webkit-inline-flex;
-  display: -moz-inline-flex;
-  display: -ms-inline-flexbox;
-  display: -ms-inline-flex;
-  display: inline-flex;
-}
-div.header nav ul li {
-  margin-left: 6px;
-  margin-right: 6px;
-}
-div.header nav ul li:first-child {
-  margin-left: 0;
-}
-div.header nav ul li:last-child {
-  margin-right: 0;
-}
-div.header nav ul a {
-  color: #555555;
-  font-weight: 400;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-}
-div.header nav ul a:hover {
-  color: #111111;
-}
-div.footer .container {
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  flex-direction: column-reverse;
-  width: 100%;
-  text-align: center;
-}
-div.footer .container a {
-  font-size: 14px;
-  margin-left: 6px;
-  margin-right: 6px;
-  opacity: 0.6;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-}
-div.footer .container a:first-child {
-  margin-left: 0;
-}
-div.footer .container a:last-child {
-  margin-right: 0;
-}
-div.footer .container a:hover {
-  opacity: 0.8;
-}
-div.footer .container a .icon {
-  width: 16px;
-  height: 16px;
-}
-div.footer .container .copyright {
-  flex-grow: 0.5;
-  text-align: start;
-}
-div.footer .container .icons {
-  flex-grow: 0.5;
-  text-align: end;
-}
-div.main .container {
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  justify-content: flex-start;
-}
-div.main .content {
-  color: #111111;
-  font-size: 16px;
-}
-div.main .content .title-container {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-}
-div.main .content .posts {
-  
-  
-}
-div.main .content .page-heading {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  letter-spacing: -0.005rem;
-  text-transform: uppercase;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  color: #333333;
-  margin-bottom: 16px;
-}
-div.main .content .front-matter .page-heading {
-  margin-bottom: 0;
-}
-div.main .content .front-matter .meta {
-  font-size: 14px;
-  color: #666666;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  margin-bottom: 32px;
-}
-div.main .content .front-matter .date,
-div.main .content .front-matter .author,
-div.main .content .front-matter .tags,
-div.main .content .front-matter .word-count,
-div.main .content .front-matter .middot:before {
-  display: none;
-}
-div.main .content .front-matter .middot:before {
-  font-size: 6px;
-  margin: 0 6px;
-  vertical-align: middle;
-  content: "•";
-}
-div.main .content .front-matter .tags ul {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-div.main .content .front-matter .tags ul li {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-}
-div.main .content .front-matter .tags ul li:hover {
-  opacity: 0.7;
-}
-div.main .content .front-matter .tags ul li a {
-  color: #666666;
-}
-div.main .container.f04 {
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-}
-div.main .container.f04 .content {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-div.main .container.f04 .content .num {
-  margin: 30px 0px 30px 0;
-  font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 50px;
-}
-div.main .container.f04 .content .detail {
-  margin-bottom: 40px;
-}
-div.main .container .content .groupby {
-  margin-top: 1em;
-  padding-left: 0.5em;
-}
-div.main .container .content .post-item {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  display: list-item;
-  list-style: disc inside;
-}
-div.main .container .content .post-item .meta {
-  font-size: 14px;
-  color: #666666;
-  display: none;
-  min-width: 100px;
-}
-div.main .container .content .see-more {
-  font-style: italic;
-  float: right;
-  font-size: 0.9em;
-  margin-top: 2em;
-  color: #313537;
-}
-div.main .container .content .see-more:hover {
-  color: #666;
-}
-section {
-  padding: 0 16px;
-}
-div.column {
-  padding: 0 16px;
-}
-div.header {
-  padding-top: 10px;
-}
-div.header-home {
-  padding-top: 36px;
-}
-div.main {
-  padding-top: 32px;
-}
-div.main .container .content .post-item .meta {
-    display: block;
-}
-div.main .container .content .post-item {
-    display: flex;
-    list-style: none;
-}
-a {
-  color: #428bca;
-  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-}
-a:hover {
-  color: #2a6496;
-}
-img {
-  max-width: 100%;
-}
-div.main .content {
-    width: 100%;
-}
-div.main .content .markdown {
-  font-size: 1.1em;
-  line-height: 1.75em;
-  color: #313537;
-  font-family: serif;
-  font-weight: 300;
-}
-div.main .content .markdown h1,
-div.main .content .markdown h2,
-div.main .content .markdown h3,
-div.main .content .markdown h4,
-div.main .content .markdown h5,
-div.main .content .markdown h6 {
-  font-size: 22px;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  letter-spacing: -0.005rem;
-  font-weight: 700;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  color: #333333;
-  text-transform: none;
-  margin-top: 1.75rem;
-}
-div.main .content .markdown h1 {
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-div.main .content .markdown h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-div.main .content .markdown h3 {
-  font-size: 1em;
-  margin-bottom: 1rem;
-}
-div.main .content .markdown h4,
-div.main .content .markdown h5,
-div.main .content .markdown h6 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  letter-spacing: none;
-}
-div.main .content .markdown code,
-div.main .content .markdown pre {
-  font-family: 'Menlo', monospace;
-  font-size: 0.98rem;
-  background-color: #f7f7f7;
-}
-div.main .content .markdown code {
-  /* enclosed by single backtick (`) */
-  padding: .15em .5em;
-  border-radius: 2px;
-}
-div.main .content .markdown pre {
-  /* Hugo specific: consider using the 'highlight' shortcode */
-  display: block;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  line-height: 1.5em;
-  white-space: pre;
-  word-break: break-all;
-  word-wrap: break-word;
-}
-div.main .content .markdown pre code {
-  /* enclosed by 4 backticks (````) */
-  padding: 0;
-  font-size: 0.9rem;
-}
-div.main .content .markdown a code {
-  color: #428bca !important;
-}
-div.main .content .markdown a code:hover {
-  text-decoration: underline;
-}
-div.main .content .markdown p {
-  
-  text-align: justify;
-  
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-div.main .content .markdown ul,
-div.main .content .markdown ol,
-div.main .content .markdown dl {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-div.main .content .markdown dt {
-  font-weight: bold;
-}
-div.main .content .markdown dd {
-  margin-bottom: .5rem;
-}
-div.main .content .markdown ul {
-  list-style-type: disc;
-  list-style-position: outside;
-  margin-bottom: 1.25rem;
-}
-div.main .content .markdown ol {
-  list-style-type: decimal;
-  margin-bottom: 1.25rem;
-}
-div.main .content .markdown li {
-  margin-left: 2em;
-}
-div.main .content .markdown em {
-  font-style: italic;
-}
-div.main .content .markdown strong {
-  font-weight: 700;
-}
-div.main .content .markdown hr {
-  position: relative;
-  margin: 1.75rem 0;
-  border: 0;
-  border-top: 1px solid #808080;
-  border-top: 1px solid #999999;
-}
-div.main .content .markdown abbr {
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: #666666;
-  text-transform: uppercase;
-}
-div.main .content .markdown abbr[title] {
-  cursor: help;
-  border-bottom: 1px dotted #808080;
-}
-div.main .content .markdown blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
-}
-div.main .content .markdown blockquote p:last-child {
-  margin-bottom: 0;
-}
-div.main .content .markdown figure {
-  width: 100%;
-  background: #fff;
-  margin-bottom: 1em;
-}
-div.main .content .markdown figure img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: block;
-  position: static;
-  margin: auto;
-}
-div.main .content .markdown table {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid #e5e5e5;
-  border-collapse: collapse;
-}
-div.main .content .markdown td,
-div.main .content .markdown th {
-  padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
-}
-div.main .content .markdown tbody tr:nth-child(odd) td,
-div.main .content .markdown tbody tr:nth-child(odd) th {
-  background-color: #f7f7f7;
-}
-div.main .content .markdown .footnotes ol {
-  list-style-type: decimal;
-  margin-left: 16px;
-}
-div.main .content .markdown .footnotes li {
-  list-style-type: unset;
-}
-div.main .content .markdown .footnote-ref {
-  font-size: 0.7em;
-}
-div.main .content .navigation {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  padding: 2em;
-}
-div.main .content .navigation div {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  margin-top: 1em;
-}
-div.main .content .navigation .icon {
-  width: 16px;
-  height: 16px;
-}
-div.main .content .navigation a {
-  width: 250px;
-  margin: 0 1em;
-  text-align: center;
-  font-style: italic;
-  color: #313537;
-}
-div.main .content .share, div.main .content .share div {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: center;
-}
-div.main .content .share {
-  background-color: rgba(152, 152, 152, 0.07);
-  padding: 1em 0;
-}
-div.main .content .share a {
-  margin: 0 6px;
-}
-kbd {
-  padding: 0.1em 0.6em;
-  border: 1px solid #ccc;
-  font-size: 11px;
-  font-family: Arial,Helvetica,sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
-  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  display: inline-block;
-  margin: 0 0.1em;
-  text-shadow: 0 1px 0 #fff;
-  line-height: 1.4;
-  white-space: nowrap;
-}
-
-/* Fonts */
-
-
-.wf-raleway-n4-active body, 
-.wf-raleway-n4-active div.header nav ul a,
-.wf-raleway-n7-active div.main .content .page-heading,
-.wf-raleway-n2-active div.main .container.f04 .content .num,
-.wf-raleway-n7-active div.main .content .markdown h1,
-.wf-raleway-n7-active div.main .content .markdown h2,
-.wf-raleway-n7-active div.main .content .markdown h3,
-.wf-raleway-n7-active div.main .content .markdown h4,
-.wf-raleway-n7-active div.main .content .markdown h5,
-.wf-raleway-n7-active div.main .content .markdown h6 {
-      font-family: 'Raleway';
-}
-
-.wf-merriweather-n3-active div.main .content .markdown {
-      font-family: 'Merriweather';
-}
-
-.wf-ubuntu-mono-n4-active div.main .content .markdown code,
-.wf-ubuntu-mono-n4-active div.main .content .markdown pre {
-      font-family: 'Ubuntu Mono';
-}
-
-
-</style>
-<style media="(min-width: 600px)">
-  body {
--webkit-justify-content: center;
--moz-justify-content: center;
--ms-justify-content: center;
-justify-content: center;
-}
-.non-narrow.zero-top-spacing {
-padding-top: 0 !important;
-}
-section {
-padding: 0 16px;
-margin-left: 100px;
-margin-right: 100px;
-
-max-width: 750px;
-
-}
-div.column {
-padding: 0 16px;
-
-max-width: 750px;
-
-}
-div.header {
-background-color: transparent;
-}
-div.header .container {
--webkit-justify-content: flex-start;
--moz-justify-content: flex-start;
--ms-justify-content: flex-start;
-justify-content: flex-start;
-}
-div.header .container .logo {
-margin: 0;
-}
-div.header-home .container .logo {
-max-width: 216px;
-margin-left: 24px;
-}
-div.header-home .name-home {
-padding-top: 30px;
-font-size: 40px;
-}
-div.header-home nav ul a {
-font-size: 18px;
-}
-div.header .content {
--webkit-align-items: flex-start;
--moz-align-items: flex-start;
--ms-align-items: flex-start;
-align-items: flex-start;
-}
-div.header .name {
-color: #333333;
-}
-div.header nav {
-font-size: 14px;
-margin-bottom: 0;
-}
-div.header nav ul {
-text-align: left;
-}
-div.header nav ul a {
-color: #666666;
-}
-div.header nav ul a:hover {
-color: #333333;
-}
-div.footer {
-background-color: transparent;
-}
-div.footer .container {
-flex-direction: row;
-}
-div.footer .container a {
-margin-left: 3px;
-margin-right: 3px;
-color: #666666;
-}
-div.footer .container a:hover {
-color: #333333;
-}
-div.footer .container a .icon {
-font-size: 18px;
-}
-div.footer .container a .icon.larger {
-font-size: 20px;
-}
-div.main .content .front-matter .date,
-div.main .content .front-matter .author,
-div.main .content .front-matter .tags,
-div.main .content .front-matter .word-count,
-div.main .content .front-matter .middot:before {
-display: initial;
-}
-div.main .container.f04 {
--webkit-justify-content: flex-start;
--moz-justify-content: flex-start;
--ms-justify-content: flex-start;
-justify-content: flex-start;
-}
-div.main .container.f04 .content {
--webkit-align-items: flex-start;
--moz-align-items: flex-start;
--ms-align-items: flex-start;
-align-items: flex-start;
-}
-div.main .container.f04 .content .num {
-margin: 0 0 10px 0;
-font-size: 32px;
-}
-div.main .container.f04 .content .detail {
-margin-bottom: 30px;
-}
-.container {
-padding: 0 30px;
-}
-div.header {
-padding-top: 60px;
-padding-bottom: 60px;
-}
-div.footer {
-padding-top: 60px;
-padding-bottom: 60px;
-}
-div.main {
-padding-top: 0;
-}
-div.main .content {
-  
-  font-size: 16px;
-  
-}
-div.main .container .content .post-item {
-display: flex;
-list-style: none;
-padding-left: 1.5em;
-}
-div.main .container .content .post-item .meta {
-display: block;
-}
-div.main .content .markdown blockquote {
-padding-right: 5rem;
-padding-left: 1.25rem;
-}
-div.main .content .navigation {
--webkit-flex-direction: row;
--moz-flex-direction: row;
--ms-flex-direction: row;
-flex-direction: row;
-}
-div.main .content .navigation div {
-margin-top: 0em;
-}
-
-</style>
-<style media="(min-width: 769px)">
-  div.main .content .markdown figure {
-width: 110%;
-margin-left: -4%;
-}
-div.main .content .markdown img {
-max-width: 110%;
-width: 110%;
-margin-left: -4%;
-}
-div.main .content .markdown pre {
-width: 110%;
-margin-left: -4%;
-}
-
-</style>
-
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bccfefac377bc340f06c260aed1bddf49a4354816d7c570d6aac75a997986c95.css" integrity="sha256-vM/vrDd7w0DwbCYK7Rvd9JpDVIFtfFcNaqx1qZeYbJU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://kenwoo.me/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://kenwoo.me/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kenwoo.me/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://kenwoo.me/img/apple-touch-icon.png">
+<link rel="mask-icon" href="https://kenwoo.me/img/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
 </noscript>
-
-
-  <style type="text/css" media="screen">
-    .hljs{display:block;background:white;padding:0.5em;color:#333333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-string,.hljs-variable,.hljs-template-variable,.hljs-strong,.hljs-emphasis,.hljs-quote{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-literal,.hljs-symbol,.hljs-bullet,.hljs-attribute{color:#0086b3}.hljs-section,.hljs-name{color:#63a35c}.hljs-tag{color:#333333}.hljs-title,.hljs-attr,.hljs-selector-id,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}
-  </style>
-
-
-
-  <style type="text/css" media="screen">
-    .progressive{overflow:hidden;position:relative;background:#efefef}.progressive__img{width:100%;height:100%;position:absolute;-webkit-transform:translateZ(0);transform:translateZ(0)}.progressive--not-loaded{filter:blur(30px);-webkit-filter:blur(30px)}.progressive--is-loaded{filter:blur(20px);-webkit-filter:blur(20px);-webkit-animation:sharpen .5s both;animation:sharpen .5s both}@-webkit-keyframes sharpen{from{filter:blur(20px);-webkit-filter:blur(20px)}to{filter:blur(0);-webkit-filter:blur(0)}}@keyframes sharpen{from{filter:blur(20px);-webkit-filter:blur(20px)}to{filter:blur(0);-webkit-filter:blur(0)}}
-  </style>
-
-
-
-
-
-
-
-
-
-<link rel="shortcut icon"
-
-    href="https://kenwoo.me/img/gouki-favicon.jpg"
-
->
-
-
-
-
-</head>
-
-
-<body>
-
-
-<div class="header column">
-
-    <div class="container">
-        
-        <div class="content">
-            <a href="https://kenwoo.me/"><div class="name"><h1>kenwoo.me</h1></div></a>
-            <nav>
-                <ul>
-                    
-                            <li><a href="https://kenwoo.me/blog/">Blog</a></li>
-                    
-                    
-                        
-                            
-                        
-                    
-                    
-                        
-                            <li><a href="https://kenwoo.me/code/">Code</a></li>
-                        
-                    
-                        
-                    
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="main column">
-    <div class="container">
-        <div class="content">
-            <div class="page-heading">
-
-    
-    Code
-    
-
-</div>
-
-            <div class="markdown">
-                
-    
-    
-
-<h2 id="countdown-until-world-domination-http-kenwoo-me-countdown"><a href="http://kenwoo.me/countdown">Countdown until World Domination</a></h2>
-
-<p>After receiving ACL surgery for my right knee, I was told to aim for <strong>one whole year</strong> of rehabilitation and gradual return to <del>world domination</del> sport.</p>
-
-<p>Crossing out days on a calendar is so last decade, so I made this page to help me keep track of when it is time to profit again.</p>
-
-<p><a href="https://github.com/wooken/countdown">Source Code on Github</a></p>
-
-<h2 id="mpt-log-generator-http-kenwoo-me-mptlog"><a href="http://kenwoo.me/mptlog">MPT Log Generator</a></h2>
-
-<p>When I was training a lot, my coach wanted me to keep a daily journal of what I did each session on Google Docs.</p>
-
-<p>Calculating and formatting the entries every single day was repetitive as heck. So I wrote a <a href="https://github.com/wooken/tonnage-calc">command line tool</a> to do it for me.</p>
-
-<p>Later, I rewrote this as a <a href="http://kenwoo.me/mptlog">client-side browser tool</a> so other athletes under my coach could use it as well.</p>
-
-<p>User experience is laughable and there is not a single error message to speak of. Some things to think about for the next tool.</p>
-
-<p><a href="https://github.com/wooken/mptlog">Source Code on Github</a></p>
-
-<h2 id="archlinux-mirror-list">ArchLinux Mirror List</h2>
-
-<p>Every time Arch comes out with a new list of mirrors, you have to go through this silly process of choosing a list of servers, re-ping them, and generate a new list of servers you want to use for system updates.</p>
-
-<p>I made this script, in <em>awk</em> of all things, for fun, to automate this process. It&rsquo;ll choose servers in, admittedly, hard-coded locations, ping the servers, and spit out the top 6 servers to use.</p>
-
-<p><a href="https://github.com/wooken/archlinux_mirrorlist">Source Code on Github</a></p>
-
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="footer column">
-    <div class="container">
-
-        
-
-        <div class="copyright">
-
-        
-
-        </div>
-        <div class="icons">
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-            <a href="https://github.com/wooken" rel=me target="_blank">
-                <img class="icon" src="https://kenwoo.me/img/github.svg" alt="github" />
-            </a>
-        
-
-        
-            <a href="https://twitter.com/kenzorz" rel=me target="_blank">
-                <img class="icon" src="https://kenwoo.me/img/twitter.svg" alt="twitter" />
-            </a>
-        
-
-        
-            <a href="https://www.linkedin.com/in/wookenny" rel=me target="_blank">
-                <img class="icon" src="https://kenwoo.me/img/linkedin.svg" alt="linkedin" />
-            </a>
-        
-
-        
-
-        
-            <a href="mailto:kenny@kenwoo.me">
-                <img class="icon" src="https://kenwoo.me/img/email.svg" alt="email" />
-            </a>
-        
-
-        
-            <a href="https://kenwoo.me/index.xml">
-                <img class="icon" src="https://kenwoo.me/img/rss.svg" alt="rss" />
-            </a>
-        
-
-        </div>
-    </div>
-</div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-  WebFont.load({
-    google: {
-      families: ['Raleway:400,600,700', 'Merriweather:300,300i,700,700i', 'Ubuntu+Mono:400,700']
-    }
-  });
-</script>
-
-
-
-  <script src="https://kenwoo.me/js/highlight.min.js" defer></script>
-  
-
-
-
-  <script src="https://kenwoo.me/js/progressively.min.js" defer></script>
-
-
-
-
-
-
-
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-112764492-1', 'auto');
 	
 	ga('send', 'pageview');
 }
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+</script><meta property="og:title" content="Code" />
+<meta property="og:description" content="Countdown until World Domination After receiving ACL surgery for my right knee, I was told to aim for one whole year of rehabilitation and gradual return to world domination sport.
+Crossing out days on a calendar is so last decade, so I made this page to help me keep track of when it is time to profit again.
+Source Code on Github
+MPT Log Generator When I was training a lot, my coach wanted me to keep a daily journal of what I did each session on Google Docs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kenwoo.me/code/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2018-01-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-01-01T00:00:00+00:00" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Code"/>
+<meta name="twitter:description" content="Countdown until World Domination After receiving ACL surgery for my right knee, I was told to aim for one whole year of rehabilitation and gradual return to world domination sport.
+Crossing out days on a calendar is so last decade, so I made this page to help me keep track of when it is time to profit again.
+Source Code on Github
+MPT Log Generator When I was training a lot, my coach wanted me to keep a daily journal of what I did each session on Google Docs."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Code",
+      "item": "https://kenwoo.me/code/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Code",
+  "name": "Code",
+  "description": "Countdown until World Domination After receiving ACL surgery for my right knee, I was told to aim for one whole year of rehabilitation and gradual return to world domination sport.\nCrossing out days on a calendar is so last decade, so I made this page to help me keep track of when it is time to profit again.\nSource Code on Github\nMPT Log Generator When I was training a lot, my coach wanted me to keep a daily journal of what I did each session on Google Docs.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Countdown until World Domination After receiving ACL surgery for my right knee, I was told to aim for one whole year of rehabilitation and gradual return to world domination sport.\nCrossing out days on a calendar is so last decade, so I made this page to help me keep track of when it is time to profit again.\nSource Code on Github\nMPT Log Generator When I was training a lot, my coach wanted me to keep a daily journal of what I did each session on Google Docs.\nCalculating and formatting the entries every single day was repetitive as heck. So I wrote a command line tool to do it for me.\nLater, I rewrote this as a client-side browser tool so other athletes under my coach could use it as well.\nUser experience is laughable and there is not a single error message to speak of. Some things to think about for the next tool.\nSource Code on Github\nArchLinux Mirror List Every time Arch comes out with a new list of mirrors, you have to go through this silly process of choosing a list of servers, re-ping them, and generate a new list of servers you want to use for system updates.\nI made this script, in awk of all things, for fun, to automate this process. It’ll choose servers in, admittedly, hard-coded locations, ping the servers, and spit out the top 6 servers to use.\nSource Code on Github\n",
+  "wordCount" : "243",
+  "inLanguage": "en",
+  "datePublished": "2018-01-01T00:00:00Z",
+  "dateModified": "2018-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kenwoo.me/code/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "kenwoo.me",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kenwoo.me/img/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://kenwoo.me/" accesskey="h" title="kenwoo.me (Alt + H)">kenwoo.me</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://kenwoo.me/code" title="code">
+                    <span class="active">code</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Code
+    </h1>
+    <div class="post-meta"><span title='2018-01-01 00:00:00 +0000 UTC'>January 1, 2018</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="countdown-until-world-dominationhttpkenwoomecountdown"><a href="http://kenwoo.me/countdown">Countdown until World Domination</a><a hidden class="anchor" aria-hidden="true" href="#countdown-until-world-dominationhttpkenwoomecountdown">#</a></h2>
+<p>After receiving ACL surgery for my right knee, I was told to aim for <strong>one whole year</strong> of rehabilitation and gradual return to <del>world domination</del> sport.</p>
+<p>Crossing out days on a calendar is so last decade, so I made this page to help me keep track of when it is time to profit again.</p>
+<p><a href="https://github.com/wooken/countdown">Source Code on Github</a></p>
+<h2 id="mpt-log-generatorhttpkenwoomemptlog"><a href="http://kenwoo.me/mptlog">MPT Log Generator</a><a hidden class="anchor" aria-hidden="true" href="#mpt-log-generatorhttpkenwoomemptlog">#</a></h2>
+<p>When I was training a lot, my coach wanted me to keep a daily journal of what I did each session on Google Docs.</p>
+<p>Calculating and formatting the entries every single day was repetitive as heck. So I wrote a <a href="https://github.com/wooken/tonnage-calc">command line tool</a> to do it for me.</p>
+<p>Later, I rewrote this as a <a href="http://kenwoo.me/mptlog">client-side browser tool</a> so other athletes under my coach could use it as well.</p>
+<p>User experience is laughable and there is not a single error message to speak of. Some things to think about for the next tool.</p>
+<p><a href="https://github.com/wooken/mptlog">Source Code on Github</a></p>
+<h2 id="archlinux-mirror-list">ArchLinux Mirror List<a hidden class="anchor" aria-hidden="true" href="#archlinux-mirror-list">#</a></h2>
+<p>Every time Arch comes out with a new list of mirrors, you have to go through this silly process of choosing a list of servers, re-ping them, and generate a new list of servers you want to use for system updates.</p>
+<p>I made this script, in <em>awk</em> of all things, for fun, to automate this process. It&rsquo;ll choose servers in, admittedly, hard-coded locations, ping the servers, and spit out the top 6 servers to use.</p>
+<p><a href="https://github.com/wooken/archlinux_mirrorlist">Source Code on Github</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://kenwoo.me/">kenwoo.me</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
 <script>
-  window.onload = function() {
-    
-      hljs.initHighlighting();
-    
-    
-      progressively.init({delay: 30, throttle: 50});
-    
-    
-  };
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
 </script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
 
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
 
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
 
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
 </body>
-</html>
 
+</html>
